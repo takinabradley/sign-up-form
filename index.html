@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="validate.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="splash-header">
+    <p class="banner">
+      <img src="odin-lined.png" alt="Odin Head"> ODIN
+    </p>
+
+    <p class="image-credits">Photo by Halie West on Unsplash</p>
+  </header>
+
+  <main>
+    <section class="blurb">
+      <p>This is not a real online service! You know you need something like 
+        this in your life to help you realize your deepest dreams. Sign up
+        <em>now</em> to get started.
+      </p>
+
+      <p>You <em>know</em> you want to.</p>
+    </section>
+    
+      
+    <form id='sign-up-form' action="" method="get">
+      <p>Let's do this!</p>
+
+      
+        <div class="form-names">
+          <label for="first-name">
+            First Name
+            <input type="text" id="first-name" name="first-name">
+          </label>
+          <label for="last-name">
+            Last Name
+            <input type="text" id="last-name" name="last-name">
+          </label>
+        </div>
+
+        <div class="form-contact">
+          <label for="email">
+            Email
+            <input type="email" name="email" id="email">
+          </label>
+          <label for="telephone">
+            Phone Number
+            <input type="telephone" id="telephone" name="telephone">
+          </label>
+        </div>
+
+        <div class="form-password">
+          <label for="password">
+            Password
+            <input type="password" name="password" id="password" required>
+            <span class="message">*Passwords do not match</span>
+          </label>
+          <label for="confirm-password">
+            Confirm Password
+            <input type="password" name="confirm-password" id="confirm-password"
+                   required>
+          </label>
+        </div>
+        
+    </form>
+
+    <section class="bottom-text">
+      <button form="sign-up-form">Create Account</button>
+
+      <p class="login-text">Already have an account? <a href="">Log in</a></p>
+    </section>
+  </main>
+
+</body>
+</html>

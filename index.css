@@ -1,0 +1,178 @@
+:root {
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+
+/* Image heading */
+header {
+  flex: 2;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  background-image: url(halie-west-unsplash.jpg);
+  color: white;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+header .banner {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin-top: 33%;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-family: serif;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+header .banner img {
+  height: 150px;
+}
+
+header .image-credits {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* main content */
+main {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  background-color: ghostwhite;
+  width: 100%;
+}
+
+.blurb {
+  flex: 1;
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* form */
+
+form {
+  position: relative;
+  flex: 2;
+  padding: 3rem;
+  margin: 0;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+
+  border: 1px solid gainsboro;
+}
+
+form::after {
+  content: ' ';
+  height: 1px;
+  width: 100%;
+  box-shadow: 0px 20px 7px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 17px;
+}
+
+form p {
+  flex: 1;
+  font-size: 2em;
+  margin: -1rem 0 -1rem 0;
+  padding: 0;
+}
+
+form [class^='form'] {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20%;
+  width: 100%;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+form input {
+  height: 33%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 0 10px 0 10px;
+  width: 75%;
+}
+
+form input:focus {
+  outline: 1px solid blue;
+  box-shadow: 5px 5px 10px gainsboro;
+}
+
+form input + .message {
+  visibility: hidden;
+}
+
+form input:invalid {
+  border: 2px solid crimson;
+}
+
+form input:invalid + .message {
+  visibility: visible;
+  color: crimson;
+  font-size: .75rem;
+}
+
+
+/* bottom text*/
+.bottom-text {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  flex: 1;
+}
+
+.bottom-text button {
+  background-color: darkolivegreen;
+  min-height: 55px;
+  height: 30%;
+  max-height: 100px;
+  min-width: 175px;
+  max-width: 400px;
+  width: 20%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.bottom-text p {
+  margin-top: 3%;
+  font-weight: bold;
+}
