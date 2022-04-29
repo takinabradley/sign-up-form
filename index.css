@@ -176,3 +176,13 @@ form input:invalid + .message {
   margin-top: 3%;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1000px){
+  body {
+    flex-direction: column;
+  }
+
+  form p {
+    margin-bottom: 1rem;
+  }
+}
